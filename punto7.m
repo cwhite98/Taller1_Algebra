@@ -28,27 +28,27 @@ subplot(4,1,1)
 Chabit=chi2inv(0.95,6)
 I=find(mahalanobis>Chabit)
 I2=find(mahalanobis<Chabit)
-plot(datarray(I2,:),datarray(I2,: ), 'ob')
+plot(datarray(I2,:),datarray(I2, :), 'ob')
 hold on
-plot(datarray(I,: ),datarray(I,:), '+r')
+plot(datarray(I,: ),datarray(I, :), '+r')
 
 %%%%%%%%%%%%%%% COV1PARA %%%%%%%%%%%%%%%%%%%%%%%%%%%
 subplot(4,1,2)
 Cpara=chi2inv(0.95,6)
 IPara=find(dPara>Cpara)
 I2Para=find(dPara<Cpara)
-plot(datarray(I2Para,99: end),datarray(I2Para,99: end), 'ob')
+plot(datarray(I2Para, :),datarray(I2Para, :), 'ob')
 hold on
-plot(datarray(IPara,99: end),datarray(IPara,99: end), '+r')
+plot(datarray(IPara, :),datarray(IPara, :), '+r')
 
 %%%%%%%%%%%%%%% KUR %%%%%%%%%%%%%%%%%%%%%%%%%%%
 subplot(4,1,3)
 Ckur=chi2inv(0.95,6)
 IKur=find(dKur>Ckur)
 I2Kur=find(dKur<Ckur)
-plot(datarray(I2Kur,:),datarray(I2Kur,:), 'ob')
+plot(datarray(I2Kur, :),datarray(I2Kur,:), 'ob')
 hold on
-plot(datarray(IKur,:),datarray(IKur,:), '+r')
+plot(datarray(IKur, :),datarray(IKur,:), '+r')
 
 % idx para todos
 idx_habitual = zeros(668, 1);
